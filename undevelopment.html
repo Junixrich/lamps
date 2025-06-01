@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>В разработке</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #ececec;
+    }
+    .undevelopment-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1 0 auto;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 16px;
+      text-align: center;
+    }
+    .undevelopment-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 32px;
+      letter-spacing: 2px;
+    }
+    .undevelopment-btn {
+      display: inline-block;
+      background: #007aff;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 18px 40px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 16px;
+      transition: background 0.2s;
+    }
+    .undevelopment-btn:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="undevelopment-container">
+    <div class="undevelopment-animation-bg">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle cx="60" cy="60" r="40" stroke="#007aff" stroke-width="8" fill="none"/>
+          <g class="gear1">
+            <circle cx="60" cy="60" r="28" stroke="#91D6AC" stroke-width="6" fill="none"/>
+            <circle cx="60" cy="32" r="4" fill="#91D6AC"/>
+            <circle cx="60" cy="88" r="4" fill="#91D6AC"/>
+            <circle cx="32" cy="60" r="4" fill="#91D6AC"/>
+            <circle cx="88" cy="60" r="4" fill="#91D6AC"/>
+          </g>
+          <g class="gear2">
+            <circle cx="60" cy="60" r="16" stroke="#d32f2f" stroke-width="4" fill="none"/>
+            <circle cx="60" cy="44" r="2.5" fill="#d32f2f"/>
+            <circle cx="60" cy="76" r="2.5" fill="#d32f2f"/>
+            <circle cx="44" cy="60" r="2.5" fill="#d32f2f"/>
+            <circle cx="76" cy="60" r="2.5" fill="#d32f2f"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="undevelopment-title">В разработке</div>
+    <a href="catalog.html" class="undevelopment-btn">Вернуться на сайт</a>
+  </div>
+  <style>
+    .undevelopment-animation-bg {
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .gear1 {
+      transform-origin: 60px 60px;
+      animation: gear-rotate 2.5s linear infinite;
+    }
+    .gear2 {
+      transform-origin: 60px 60px;
+      animation: gear-rotate-rev 1.5s linear infinite;
+    }
+    @keyframes gear-rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes gear-rotate-rev {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+  </style>
+</body>
+</html>
